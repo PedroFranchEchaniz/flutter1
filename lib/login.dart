@@ -15,8 +15,21 @@ class Login extends StatelessWidget {
           Text('Hola caracola',
               style: TextStyle(color: Colors.white, fontSize: 20)),
           ElevatedButton(onPressed: null, child: Text('Botón')),
-          Row(),
-          Row()
+          Row(
+            children: [
+              Text('Hola caracola',
+                  style: TextStyle(color: Colors.white, fontSize: 20)),
+              ElevatedButton(onPressed: null, child: Text('Botón')),
+            ],
+          ),
+          Row(
+            children: [
+              Text('Hola caracola',
+                  style: TextStyle(color: Colors.white, fontSize: 20)),
+              Text('Hola caracola',
+                  style: TextStyle(color: Colors.white, fontSize: 20)),
+            ],
+          )
         ],
       ),
     );
