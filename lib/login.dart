@@ -11,7 +11,7 @@ class Login extends StatelessWidget {
         color: const Color(0xFFE62F16),
         child: Column(
           children: [
-            Expanded(child: Image.asset('')),
+            Expanded(child: Image.asset('asset/path_logo.png')),
             const Expanded(child: Text('Lorem impsum')),
             ElevatedButton(onPressed: () {}, child: const Text('Boton')),
             const Expanded(child: Text('Lorem impsum')),
