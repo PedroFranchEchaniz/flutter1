@@ -5,32 +5,35 @@ class Login extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: [
-          Image(
-              image: NetworkImage(
-                  'https://lh3.googleusercontent.com/drive-storage/ANtge_Epiywnl8S3U-sp4cb3i-3SoyByrlmvthNpCdw4CRzqj3xuaOGuaury-T5mUAlDIiJJjHW9crDnWLB2zBGMs0LGdpob4AjV5F2sIkAk_A=w1903-h919')),
-          Text('Hola caracola',
-              style: TextStyle(color: Colors.white, fontSize: 20)),
-          ElevatedButton(onPressed: null, child: Text('Botón')),
-          Row(
-            children: [
-              Text('Hola caracola',
-                  style: TextStyle(color: Colors.white, fontSize: 20)),
-              ElevatedButton(onPressed: null, child: Text('Botón')),
-            ],
-          ),
-          Row(
-            children: [
-              Text('Hola caracola',
-                  style: TextStyle(color: Colors.white, fontSize: 20)),
-              Text('Hola caracola',
-                  style: TextStyle(color: Colors.white, fontSize: 20)),
-            ],
-          )
-        ],
+    return Scaffold(
+      body: Container(
+        width: double.infinity,
+        color: const Color(0xFFE62F16),
+        child: Column(
+          children: [
+            Image.asset(''),
+            const Text(''),
+            ElevatedButton(onPressed: () {}, child: const Text('')),
+            const Text(''),
+            ElevatedButton(onPressed: () {}, child: const Text('')),
+            RichText(
+              text: const TextSpan(
+                text: 'Terms of Use ',
+                style: TextStyle(
+                    fontWeight: FontWeight.bold,
+                    color: Color.fromARGB(255, 255, 255, 255)),
+                children: <TextSpan>[
+                  TextSpan(
+                      text: 'and',
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                  TextSpan(
+                      text: ' world!',
+                      style: TextStyle(fontWeight: FontWeight.bold)),
+                ],
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
